@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "esbenp.prettier-vscode",
+    "bodil.prettier-toml",
+    "EditorConfig.editorconfig",
+    "mrmlnc.vscode-json5",
+    "hashicorp.terraform"
+  ]
+}
