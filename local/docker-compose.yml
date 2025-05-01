@@ -1,0 +1,23 @@
+name: cmbpm
+
+services:
+  db:
+    container_name: cmbpm-db
+    build:
+      context: ${PWD}
+      dockerfile: ${PWD}/Dockerfile.db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: cmbpm-local
+      TZ: UTC
+    ports:
+      - 5432:5432
+    networks:
+      cmbpm-network:
+        aliases:
+          - db.local
+
+networks:
+  cmbpm-network:
+    name: cmbpm-network

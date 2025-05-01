@@ -1,0 +1,8 @@
+# db container
+FROM postgres:15.12
+
+# copy init scripts to container
+COPY ./db_init_scripts/* /docker-entrypoint-initdb.d/
+
+# copy .pgpass file to container
+COPY --chmod=0400 ./.pgpass /var/lib/postgresql/.pgpass

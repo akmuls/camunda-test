@@ -5,6 +5,7 @@
     "bodil.prettier-toml",
     "EditorConfig.editorconfig",
     "mrmlnc.vscode-json5",
+    "ms-azuretools.vscode-docker",
     "hashicorp.terraform"
   ]
 }
